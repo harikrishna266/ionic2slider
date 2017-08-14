@@ -6,9 +6,17 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content >
+    <ion-slides  slidesPerView='3' zoom="true" style="height:252px;background: blue">
+        <ion-slide>
+        </ion-slide>
+        <ion-slide *ngFor="let i of images" >
+            <div class="swiper-zoom-container">
+                <img [src]='i' class="ImgInSlider">
+            </div>
+            <div class="cardFooter"><p>some text</p></div>
+        </ion-slide>
+        <ion-slide>
+        </ion-slide>
+    </ion-slides>
 </ion-content>

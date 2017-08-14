@@ -1,3 +1,36 @@
-page-home {
 
+.SlideCustomContainer{
+  width: 100% !important;
+  display: block;
+  margin: 0 auto;
 }
+
+.ImgInSlider{
+  width: 120px !important;
+}
+.swiper-slide img {
+
+  transform: scaleY(.6);
+  -webkit-transform: scale(.6) ;
+  transition: transform 0.5s;
+  max-width: 140% !important;
+}
+.swiper-slide-next img {
+  -webkit-transform: scale(1) ;
+  transition: transform 0.6s;
+}
+.swiper-slide-next .cardFooter{
+  display:block;
+}
+.cardFooter{
+  display:none;
+}
+ 
+.cardScroll {
+        display: flex;
+        overflow-x: scroll;
+        margin-left: 15px;
+        .badgweDiv{
+          display:flex;
+        }
+    }
